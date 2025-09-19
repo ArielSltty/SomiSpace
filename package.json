@@ -1,0 +1,22 @@
+{
+  "name": "SomiSpace",
+  "version": "1.0.0",
+  "description": "Wallet-to-Wallet Messaging + Token Transfer on Somnia",
+  "main": "index.js",
+  "scripts": {
+    "contracts:compile": "cd packages/contracts && pnpm compile",
+    "contracts:deploy": "cd packages/contracts && pnpm deploy",
+    "frontend:dev": "cd packages/frontend && pnpm dev",
+    "frontend:build": "cd packages/frontend && pnpm build",
+    "install:all": "pnpm install",
+    "setup:contracts": "cd packages/contracts && pnpm install",
+    "setup:frontend": "cd packages/frontend && pnpm install"
+  },
+  "keywords": ["somnia", "blockchain", "messaging", "defi", "web3"],
+  "author": "ArielSltty",
+  "license": "MIT",
+  "packageManager": "pnpm@10.15.1",
+  "workspaces": [
+    "packages/*"
+  ]
+}
